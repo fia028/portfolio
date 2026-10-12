@@ -2,224 +2,221 @@
    1. BASE & RESET STYLES (ตั้งค่าพื้นฐานของเว็บไซต์)
    ========================================================================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333333;
-    background-color: #f8f9fa;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    /* ดัน Footer ให้อยู่ล่างสุดเสมอ */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* ดัน Footer ให้อยู่ล่างสุดเสมอ */
 }
 
 /* พื้นที่จัดวางเนื้อหาหลักกลางหน้าจอ */
 main {
-    flex: 1;
-    max-width: 1100px;
-    width: 90%;
-    margin: 2rem auto;
+  flex: 1;
+  max-width: 1100px;
+  width: 90%;
+  margin: 2rem auto;
 }
 
-
 /* ==========================================================================
-   2. HEADER & NAVIGATION (แถบเมนูด้านบน)
+2. HEADER & NAVIGATION (แถบเมนูด้านบน)
    ========================================================================== */
 header {
-    background-color: #1e293b;
-    color: #ffffff;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
 }
 
 .nav-container {
-    max-width: 1100px;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #38bdf8;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #38bdf8;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
 }
 
 nav a {
-    color: #cbd5e1;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 0.8rem;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 /* สถานะเมื่อเอาเมาส์ไปชี้เมนู */
 nav a:hover {
-    color: #ffffff;
-    background-color: #334155;
+  color: #ffffff;
+  background-color: #334155;
 }
 
 nav a.active {
-    color: #ffffff;
-    background-color: #0284c7;
+  color: #ffffff;
+  background-color: #0284c7;
 }
-
 
 /* ==========================================================================
    3. REUSABLE COMPONENTS (ชิ้นส่วนที่ใช้ซ้ำได้หลายๆ หน้า)
    ========================================================================== */
 /* สไตล์ปุ่มกด */
 .btn {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    background-color: #0284c7;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #0284c7;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #01080c;
+  background-color: #01080c;
 }
 
 .btn-wrapper {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 /* สไตล์หัวข้อประจำส่วน (Section Titles) */
 .section-title {
-    font-size: 1.8rem;
-    color: #0f172a;
-    margin-bottom: 1rem;
-    border-bottom: 3px solid #0284c7;
-    display: inline-block;
-    padding-bottom: 0.3rem;
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #0284c7;
+  display: inline-block;
+  padding-bottom: 0.3rem;
 }
 
-
 .section-margin {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 /* หน้าทักษะและผลงาน */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.8rem;
-    margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 1.8rem;
+  margin-top: 1.5rem;
 }
 
 .card {
-    background-color: #c0cfda;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(236, 232, 232, 0.05);
+    min-height: 200px;
+    background-color: #ffffff;
+    border: 1px solid #d8e8f6;
+    border-radius: 12px;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-}
-
-.card-work {
-    background-color: #c0cfda;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card-work {
+  background-color: #c0cfda;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
 
-.card-work:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
+.card-work:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
 
 .card-img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 1rem;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
 }
 
 .card h3 {
-    margin-bottom: 0.5rem;
-    color: #0f172a;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
 }
 
 /* ป้ายบอกเทคโนโลยีที่ใช้ (Tech Tags) */
 .tech-tag {
-    display: inline-block;
-    background-color: #e0f2fe;
-    color: #000000;
-    font-size: 0.85rem;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    margin-right: 0.4rem;
-    margin-top: 0.5rem;
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: #000000;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-right: 0.4rem;
+  margin-top: 0.5rem;
 }
-
 
 /* ==========================================================================
    4. HOME PAGE STYLES (สไตล์เฉพาะหน้าแรก - index.html)
    ========================================================================== */
 .hero {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    background-color: #ffffff;
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .hero-img {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #0284c7;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0284c7;
 }
 
 .hero-text h1 {
-    font-size: 2.2rem;
-    color: #0f172a;
-    margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
 }
 
 .hero-text h2 {
-    font-size: 1.2rem;
-    color: #0284c7;
-    margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #0284c7;
+  margin-bottom: 1rem;
 }
 
 .hero-text p {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-
 
 /* ==========================================================================
    5. CONTACT PAGE STYLES (สไตล์เฉพาะหน้าติดต่อ - contact.html)
@@ -229,190 +226,189 @@ nav a.active {
    5. CONTACT PAGE STYLES (สไตล์เฉพาะหน้าติดต่อ แบบการ์ดโซเชียล)
    ========================================================================== */
 .social-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .social-card {
-    background-color: #b9c3c9;
-    border-radius: 12px;
-    padding: 2.5rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    border-top: 5px solid #00aeff;
+  background-color: #b9c3c9;
+  border-radius: 12px;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  border-top: 5px solid #00aeff;
 }
 
 .social-card:hover {
-    transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 /* สีขอบด้านบน */
 .social-card.email:hover {
-    border-color: #ea4335;
+  border-color: #ea4335;
 }
 
 .social-card.github:hover {
-    border-color: #333333;
+  border-color: #333333;
 }
 
 .social-card.facebook:hover {
-    border-color: #023270;
+  border-color: #023270;
 }
 
 .social-card .icon {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
 }
 
 .social-card h3 {
-    font-size: 1.3rem;
-    color: #0f172a;
-    margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
 }
 
 .social-card p {
-    color: #64748b;
-    font-size: 1rem;
+  color: #64748b;
+  font-size: 1rem;
 }
 
 /* ==========================================================================
-                                      แบบฟอร์ม
+                             แบบฟอร์ม
 ========================================================================== */
 
 .contact-form-container {
-    max-width: 500px;
-    margin: 30px auto;
-    padding: 24px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(65, 63, 63, 0.979);
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(65, 63, 63, 0.979);
 }
 
 .contact-form-container h2 {
-    margin-bottom: 16px;
-    color: #1a1a1a;
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: 600;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 .form-grid {
-    display: grid;
-    gap: 12px;
-    margin-bottom: 12px;
+  display: grid;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 /* ช่องข้อความให้กินพื้นที่ยาวเต็ม 2 คอลัมน์ */
 .form-group.full-width {
-    grid-column: span 2;
+  grid-column: span 2;
 }
-
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 10px 14px;
-    border: 1.5px solid #709bd3;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    color: #2d3748;
-    background-color: #a6c5e4;
-    transition: all 0.2s ease;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #709bd3;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #2d3748;
+  background-color: #a6c5e4;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #3b82f6;
-    background-color: #ffffff;
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+.form-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 }
 
 /* ปุ่มส่งข้อความ */
 .submit-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #3b82f6;
-    color: #fcf9f9;
-    border: none;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+  width: 100%;
+  padding: 10px;
+  background-color: #3b82f6;
+  color: #fcf9f9;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .submit-btn:hover {
-    background-color: #2563eb;
+  background-color: #2563eb;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+  .nav-container,
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .nav-container,
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-    }
+  .hero {
+    padding: 1.5rem;
+  }
 
-    .hero {
-        padding: 1.5rem;
-    }
+  .hero-img {
+    width: 180px;
+    height: 180px;
+  }
 
-    .hero-img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .grid-container,
-    .social-grid {
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
-    }
+  .grid-container,
+  .social-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  }
 }
 
 @media (max-width: 480px) {
-    main {
-        width: 94%;
-    }
+  main {
+    width: 94%;
+  }
 
-    .hero-img {
-        width: 150px;
-        height: 150px;
-    }
+  .hero-img {
+    width: 150px;
+    height: 150px;
+  }
 
-    .hero-text h1 {
-        font-size: 1.5rem;
-    }
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
 
-    .grid-container,
-    .social-grid {
-        grid-template-columns: 1fr;
-    }
+  .grid-container,
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .contact-form-container {
-        width: 100%;
-        padding: 1rem;
-    }
+  .contact-form-container {
+    width: 100%;
+    padding: 1rem;
+  }
 }
-
 
 /* ==========================================================================
    6. FOOTER STYLES (ส่วนท้ายเว็บไซต์ - ใช้ร่วมกันทุกหน้า)
    ========================================================================== */
 footer {
-    background-color: #1e293b;
-    color: #cbd5e1;
-    text-align: center;
-    padding: 1.5rem 0;
-    margin-top: auto;
+  background-color: #1e293b;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: auto;
 }
