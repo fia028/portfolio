@@ -124,10 +124,15 @@ nav a.active {
 /* หน้าทักษะและผลงาน */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 3fr));
   gap: 1.8rem;
   margin-top: 1.5rem;
 }
+
+.grid-container1 {
+grid-template-columns: repeat(3, 1fr);
+}
+
 
 .card {
     min-height: 100px;
@@ -139,6 +144,7 @@ nav a.active {
     flex-direction: column;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 2rem;
 }
 
 .card-work {
