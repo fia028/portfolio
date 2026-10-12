@@ -119,17 +119,17 @@ nav a.active {
 /* หน้าทักษะและผลงาน */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 3fr));
   gap: 1.8rem;
   margin-top: 1.5rem;
 }
 
 .card {
-    min-height: 200px;
+    min-height: 100px;
     background-color: #ffffff;
     border: 1px solid #d8e8f6;
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 2rem; /* ใช้ตัวนี้ตัวเดียวเพื่อควบคุมทุกด้านให้เท่ากัน */
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
@@ -192,9 +192,6 @@ nav a.active {
   padding: 3rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
 }
 
 .hero-img {
